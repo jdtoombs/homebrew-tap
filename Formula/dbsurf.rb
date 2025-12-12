@@ -5,21 +5,21 @@
 class Dbsurf < Formula
   desc "TUI database explorer with vim-style navigation"
   homepage "https://github.com/jdtoombs/dbsurf"
-  version "0.1.2-alpha"
+  version "0.1.3-alpha"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jdtoombs/dbsurf/releases/download/v0.1.2-alpha/dbsurf_0.1.2-alpha_darwin_amd64.tar.gz"
-      sha256 "3f778d77bf44f171abf9c8c827abb4b20e2f4f217b8566967ee83c92558e2e48"
+      url "https://github.com/jdtoombs/dbsurf/releases/download/v0.1.3-alpha/dbsurf_0.1.3-alpha_darwin_amd64.tar.gz"
+      sha256 "6f45dd78def684a66bb3ee4d6727d78bafe8c5e13cd99741a5f7cbfbc85cd512"
 
       def install
         bin.install "dbsurf"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jdtoombs/dbsurf/releases/download/v0.1.2-alpha/dbsurf_0.1.2-alpha_darwin_arm64.tar.gz"
-      sha256 "9eded34da24e2ddb388b82ed5014bd73459389c39e49024fbb717b77afd61967"
+      url "https://github.com/jdtoombs/dbsurf/releases/download/v0.1.3-alpha/dbsurf_0.1.3-alpha_darwin_arm64.tar.gz"
+      sha256 "8cd8bf7553d487ab6e3ae1a2e1d52ee91e9b997edc8c8bb3cc48006e6b4511e5"
 
       def install
         bin.install "dbsurf"
@@ -29,15 +29,15 @@ class Dbsurf < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jdtoombs/dbsurf/releases/download/v0.1.2-alpha/dbsurf_0.1.2-alpha_linux_amd64.tar.gz"
-      sha256 "cf32c39a7e845d26be8dd58e6ae8ade78bfb19a7a265d720ca6b87f5b3e52b51"
+      url "https://github.com/jdtoombs/dbsurf/releases/download/v0.1.3-alpha/dbsurf_0.1.3-alpha_linux_amd64.tar.gz"
+      sha256 "50853db719b70372dbebea3764e039ebbe17d5e58ca45de472725c1ae8ffb60f"
       def install
         bin.install "dbsurf"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jdtoombs/dbsurf/releases/download/v0.1.2-alpha/dbsurf_0.1.2-alpha_linux_arm64.tar.gz"
-      sha256 "c4ae74f5e948dff5470f04bd93ca0aab949670559dd3ce1f62802a33594fa5fc"
+      url "https://github.com/jdtoombs/dbsurf/releases/download/v0.1.3-alpha/dbsurf_0.1.3-alpha_linux_arm64.tar.gz"
+      sha256 "1a807ea078b35884fa021aa834877c3dbef265533f8af3c3fd00c90bc97234a2"
       def install
         bin.install "dbsurf"
       end
